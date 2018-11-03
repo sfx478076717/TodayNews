@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/shape_search"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="关注"
+                android:textColor="@drawable/red_black_state"
+                android:textSize="20sp"
+                android:background="@color/white"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="活动"
+                android:textSize="20sp"
+                android:textColor="@drawable/red_black_state"
+                android:background="@color/white"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="推荐"
+                android:textColor="@drawable/red_black_state"
+                android:textSize="20sp"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+        <RadioButton
+            android:id="@+id/IndexSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:button="@null"
+            android:drawableLeft="@drawable/videotape"
+            android:text="发布"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_little"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"></ListView>
+</LinearLayout>
